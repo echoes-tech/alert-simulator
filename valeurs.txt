@@ -1,0 +1,4 @@
+valeur1=99.8
+valeur2=UP
+valeur3=0.5
+valeur4=
