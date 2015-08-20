@@ -1,75 +1,74 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
-<head>
-    <title>ECHOES Alert SIMULATOR Tool</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <meta name="robots" content="noindex" />
-	<style type="text/css"><!--
-    body {
-        color: #444444;
-        background-color: #EEEEEE;
-        font-family: 'Trebuchet MS', sans-serif;
-        font-size: 80%;
-    }
-    h1 {}
-    h2 { font-size: 1.2em; }
-    #page{
-        background-color: #FFFFFF;
-        width: 60%;
-        margin: 24px auto;
-        padding: 12px;
-    }
-    #header{
-        padding: 6px ;
-        text-align: center;
-    }
-    .header{ background-color: #83A342; color: #FFFFFF; }
-    #content {
-        padding: 4px 0 24px 0;
-    }
-    #footer {
-        color: #666666;
-        background: #f9f9f9;
-        padding: 10px 20px;
-        border-top: 5px #efefef solid;
-        font-size: 0.8em;
-        text-align: center;
-    }
-    #footer a {
-        color: #999999;
-    }
-    --></style>
+    <head>
+        <title>Echoes Alert SIMULATOR Tool</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="robots" content="noindex" />
+        <style type="text/css"><!--
+        body {
+            color: #444444;
+            background-color: #EEEEEE;
+            font-family: 'Trebuchet MS', sans-serif;
+            font-size: 80%;
+        }
+        h1 {}
+        h2 { font-size: 1.2em; }
+        #page{
+            background-color: #FFFFFF;
+            width: 60%;
+            margin: 24px auto;
+            padding: 12px;
+        }
+        #header{
+            padding: 6px ;
+            text-align: center;
+        }
+        .header{ background-color: #83A342; color: #FFFFFF; }
+        #content {
+            padding: 4px 0 24px 0;
+        }
+        #footer {
+            color: #666666;
+            background: #f9f9f9;
+            padding: 10px 20px;
+            border-top: 5px #efefef solid;
+            font-size: 0.8em;
+            text-align: center;
+        }
+        #footer a {
+            color: #999999;
+        }
+        --></style>
 
-<script type="text/javascript" src="fonctions.js"></script>
+        <script type="text/javascript" src="fonctions.js"></script>
+    </head>
+    <body>
+        <div id="page">
+            <div id="header" class="header">
+                <h1>Echoes Alert SIMULATOR Tool</h1>
+            </div>
+            <div id="content">
+                <!--<form id="form1" name="form1" method="post" action='updatetxt.php' enctype='multipart/form-data'>-->
+                <form id="form1" name="form1" method="post">
+                    <h2>Valeur indicateur numéro 1 : </h2><input type="text" name="valeur1" id="valeur1" value="" />
+                    <h2>Valeur indicateur numéro 2 : </h2><input type="text" name="valeur2" id="valeur2" value="" />
+                    <h2>Valeur indicateur numéro 3 : </h2><input type="text" name="valeur3" id="valeur3" value="" />
+                    <h2>Valeur indicateur numéro 4 : </h2><input type="text" name="valeur4" id="valeur4" value="" />
+                    <label>
+                        <br /><br />
+                        <input type="button" name="Submit" value="Valider" onclick="teste_ajax()" />
+                    </label>
+                </form>
+            </div>
 
-</head>
-<body>
-    <div id="page">
-        <div id="header" class="header">
-            <h1>ECHOES Alert SIMULATOR Tool</h1>
+            <div id="mondiv">La réponse sera affiché à la place de ce texte.</div>
+
+            <div id="footer">
+                <p>Copyright <a href="https://www.echoes-tech.com">Echoes Technologies</a></p>
+            </div>
         </div>
-        <div id="content">
-            <!--<form id="form1" name="form1" method="post" action='updatetxt.php' enctype='multipart/form-data'>-->
-			<form id="form1" name="form1" method="post">  
-				<h2>Valeur indicateur numéro 1 : </h2><input type="text" name="valeur1" id="valeur1" value=""/>
-				<h2>Valeur indicateur numéro 2 : </h2><input type="text" name="valeur2" id="valeur2" value=""/>
-				<h2>Valeur indicateur numéro 3 : </h2><input type="text" name="valeur3" id="valeur3" value=""/>
-				<h2>Valeur indicateur numéro 4 : </h2><input type="text" name="valeur4" id="valeur4" value=""/>
-				<label>
-					</br></br>
-					<input type="button" name="Submit" value="Valider" onclick="teste_ajax()"/>
-				</label>
-			</form>
-        </div>
-		
-		<div id="mondiv">La réponse sera affiché à la place de ce texte.</div>
-        
-		<div id="footer">
-            <p>Copyright <a href="http://www.echoes-tech.com">ECHOES Technologies</a></p>
-        </div>
-    </div>
-</body>
-<script>
-document.body.contentEditable='true';
-</script>
+    </body>
+    <script type="text/javascript">
+    document.body.contentEditable='true';
+    </script>
 </html>
